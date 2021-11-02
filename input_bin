@@ -1,0 +1,33 @@
+-1			Random number seed
+1			0 to start randomly, 1 to read initial configuration
+0			0 if starting new simulation, 1 if continuing (wipes data files or appends to them,respectively)
+0			Give new velocities
+100000		Number of MD Steps
+0000		Number of Equilibration Steps
+1			Interval at which data is calculated
+2000		Interval at which data is averaged and written
+2000		Interval at which coordinates are written
+100000		Interval at which checkpoint file is made
+15.0		Box length in x direction
+15.0		Box length in y direction
+60.0		Box length in z direction (should be longer than the others)
+2295		Number of LJ particles
+1			Number of LJ particle types
+1			Number of cells per cutoff distance
+0.80		Target temperature at bottom wall
+0.80		target temperature at top wall
+8.0			Thermostat height (at bottom wall)
+0.0005		Time step (in LJ units)
+1			Has walls in Z-direction (1 = yes, 0 = no)
+1.0			slab width
+10			number of insertions per step in each slab
+-20.0		minimum possible insertion energy in the histogram (e.g. minimum energy in fcc lattice)
+30.0		maximum possible insertion energy (at what point do we consider the boltzmann factor a zero and move on)
+0.01		insertion energy histogram bin width
+0.1			characteristic time for thermostat at lower region
+0.1			characteristic time for thermostat at upper region (deprecated)
+0.005		Pinning force
+6.0			Pin height (maximum extent of pinning force)
+1.0			Wall strength (lower wall only, same for all particles)
+2.5			Wall cutoff (lower wall only)
+2000		How many steps between zeroing out z-momentum near wall
